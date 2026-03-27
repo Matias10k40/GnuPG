@@ -1,3 +1,5 @@
+# A5 - List secret keys with long key ID format
+gpg --list-secret-keys --keyid-format=long
 A4 - List public keys in keyring
 gpg --list-keys
 A3 - Generate GPG key pair
