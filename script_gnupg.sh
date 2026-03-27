@@ -1,3 +1,5 @@
+A4 - List public keys in keyring
+gpg --list-keys
 A3 - Generate GPG key pair
 gpg --full-generate-key
 A2 - Check GPG version
