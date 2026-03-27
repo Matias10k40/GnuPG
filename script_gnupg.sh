@@ -28,15 +28,12 @@ gpg --import partner_public_key.asc
 B4 - Verify partner key was imported successfully
 gpg --list-keys
 
-# =============================================================================
-# BLOCK C — Encryption and Decryption
-# =============================================================================
-
-# C1 - Create plaintext document
+BLOCK C — Encryption and Decryption
+C1 - Create plaintext document
 echo "Hello Alexander, this is a secret message from Matias." > doc_no_cifrado.txt
 
-# C2 - Encrypt file using partner's public key
+C2 - Encrypt file using partner's public key
 gpg --encrypt --recipient alexlucien2014@gmail.com --armor --output doc_cifrado.asc doc_no_cifrado.txt
 
-# C3 - Share encrypted file with partner (upload to GitHub)
+C3 - Share encrypted file with partner (upload to GitHub)
 
